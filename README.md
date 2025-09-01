@@ -8,7 +8,6 @@ The project vectorizes tweets with **TF-IDF** and trains classic classifiers (`B
 ## Table of Contents
 
 - [Project Overview](#project-overview)  
-- [Repository Structure](#repository-structure)  
 - [Dataset](#dataset)  
 - [Setup & Installation](#setup--installation)  
 - [Running the Notebook](#running-the-notebook)  
@@ -32,12 +31,6 @@ This repository demonstrates a classical machine-learning approach to sentiment 
 - Compare performance using accuracy and classification reports.
 
 The work is notebook-first to make the pipeline easy to read and modify.
-
----
-
-## Repository Structure
-
-
 ---
 
 ## Dataset
@@ -55,10 +48,20 @@ Important: the dataset is large. Working with the full dataset requires sufficie
 ```bash
 git clone https://github.com/BeshoyAbdALMasih/Twitter_Sentiment_Analysis.git
 cd Twitter_Sentiment_Analysis
+```
+2. Create & activate a virtual environment (recommended):
+```bash
 python3 -m venv .venv
 source .venv/bin/activate         # Linux / macOS
 # .venv\Scripts\activate          # Windows (PowerShell: .venv\Scripts\Activate.ps1)
+```
+3. Install dependencies:
+```bash
 pip install -r requirements.txt
+```
+Running the Notebook
+```bash
 jupyter notebook Twitter_Sentiment_Analysis.ipynb
 # or
 jupyter lab Twitter_Sentiment_Analysis.ipynb
+```
